@@ -6,7 +6,21 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[contenthash].js'
+        filename: 'index.[contenthash].js'
     },
-    plugins: [new HtmlWebpackPlugin()],
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'wsmnnmm',
+            template: 'src/assets/index.html'
+        })
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
+
 }

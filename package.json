@@ -11,11 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0",
-    "webpack": "4",
-    "webpack-cli": "3"
-  },
-  "devDependencies": {
     "css-loader": "^3.2.0",
     "dart-sass": "^1.23.7",
     "file-loader": "^5.0.2",
